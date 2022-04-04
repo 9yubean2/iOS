@@ -9,6 +9,12 @@ import UIKit
 
 class RegisterViewController: UIViewController {
     //MARK: - Properties
+    var email: String = ""
+    var name: String = ""
+    var nickname: String = ""
+    var password: String = ""
+    
+    var userInfo: ((UserInfo) -> Void)?
     
     //유효성 검사를 위한 프로퍼티
     var isValidEmail = false {
@@ -32,6 +38,7 @@ class RegisterViewController: UIViewController {
         }
     }
     
+    @IBOutlet weak var popToLoginButton: UIButton!
     @IBOutlet weak var signupButton: UIButton!
     //Textfields
     @IBOutlet weak var emailTextField: UITextField!
@@ -47,6 +54,7 @@ class RegisterViewController: UIViewController {
         super.viewDidLoad()
 
         setupTextField()
+        setupAttribute()
         
         //swipe bug fix
         self.navigationController?.interactivePopGestureRecognizer?.delegate = nil
@@ -59,16 +67,32 @@ class RegisterViewController: UIViewController {
         switch sender {
         case emailTextField:
             self.isValidEmail = text.isValidEmail()
+            self.email = text
         case nameTextField:
-            
             self.isValidName = text.count > 2
+            self.name = text
         case nicknameTextField:
             self.isValidNickname = text.count > 2
+            self.nickname = text
         case passwordTextField:
             self.isValidPassword = text.isValidPassword()
+            self.password = text
         default:
             fatalError("Missing TextField...")
         }
+    }
+    
+    
+    @IBAction func registerButtondidTapped(_ sender: UIButton) {
+        //뒤로가기
+        self.navigationController?.popViewController(animated: true)
+        let userInfo = UserInfo(
+            email: self.email,
+            name: self.name,
+            nickname: self.nickname,
+            password: self.password)
+        self.userInfo?(userInfo)
+        
     }
     
     @IBAction func backButtonDidTapped(_ sender: UIBarButtonItem) {
@@ -102,6 +126,22 @@ class RegisterViewController: UIViewController {
                 self.signupButton.backgroundColor = UIColor(named: "disabledButtonColor")
             }
         }
+    }
+    private func setupAttribute() {
+        let text1 = "계정이 있으신가요?"
+        let text2 = "로그인"
+        let font1 = UIFont.systemFont(ofSize: 13)
+        let font2 = UIFont.systemFont(ofSize: 13, weight: .bold)
+        
+        let color1 = UIColor.darkGray
+        let color2 = UIColor(named: "facebookColor")!
+        
+        let attributes = generateButtonAttribute(
+            self.popToLoginButton,
+            texts: text1, text2,
+            fonts: font1, font2,
+            colors: color1, color2 )
+        self.popToLoginButton.setAttributedTitle(attributes, for: .normal)
     }
 }
 

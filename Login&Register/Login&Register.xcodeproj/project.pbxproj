@@ -19,6 +19,7 @@
 		E1E9D65027F8B98700A23ECD /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E9D64F27F8B98700A23ECD /* RegisterViewController.swift */; };
 		E1E9D65227F8CBAB00A23ECD /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E9D65127F8CBAB00A23ECD /* UIView + Extension.swift */; };
 		E1E9D65427F8CC7100A23ECD /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E9D65327F8CC7100A23ECD /* UIViewController + Extension.swift */; };
+		E1E9D66027FABE7900A23ECD /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E9D65F27FABE7900A23ECD /* UserInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		E1E9D64F27F8B98700A23ECD /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		E1E9D65127F8CBAB00A23ECD /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
 		E1E9D65327F8CC7100A23ECD /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
+		E1E9D65F27FABE7900A23ECD /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				E1E9D62327F8AB9800A23ECD /* Main.storyboard */,
 				E1E9D65327F8CC7100A23ECD /* UIViewController + Extension.swift */,
 				E1E9D64F27F8B98700A23ECD /* RegisterViewController.swift */,
+				E1E9D65F27FABE7900A23ECD /* UserInfo.swift */,
 				E1E9D65127F8CBAB00A23ECD /* UIView + Extension.swift */,
 				E1E9D64D27F8B35800A23ECD /* LoginViewController.swift */,
 				E1E9D62627F8AB9900A23ECD /* Assets.xcassets */,
@@ -272,6 +275,7 @@
 				E1E9D62027F8AB9800A23ECD /* SceneDelegate.swift in Sources */,
 				E1E9D65227F8CBAB00A23ECD /* UIView + Extension.swift in Sources */,
 				E1E9D65427F8CC7100A23ECD /* UIViewController + Extension.swift in Sources */,
+				E1E9D66027FABE7900A23ECD /* UserInfo.swift in Sources */,
 				E1E9D65027F8B98700A23ECD /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
