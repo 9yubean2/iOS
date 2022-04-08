@@ -12,12 +12,16 @@ class LoginViewController: UIViewController {
     
     var email = String()
     var password = String()
+    var userInfo : UserInfo?
 
+    @IBOutlet weak var loginButton: UIButton!
     
+    @IBOutlet weak var registerButton: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupAttribute()
 
         // Do any additional setup after loading the view.
     }
@@ -32,10 +36,27 @@ class LoginViewController: UIViewController {
     
     @IBAction func passwordTextFieldEditingChanged(_ sender: UITextField) {
         let text = sender.text ?? ""
+        
+        self.loginButton.backgroundColor = text.count > 2 ? UIColor(named: "facebookColor"):UIColor(named: "disabledButtonColor")
+        
         self.password = text
     }
     
     @IBAction func loginButtonDidTapped(_ sender: UIButton) {
+        //회원가입 정보를 전달 받아서, 일치하면 로그인
+        guard let userInfo = self.userInfo else {return}
+        if userInfo.email == self.email
+            && userInfo.password == self.password {
+            self.loginButton.backgroundColor = UIColor(named: "facebookColor")
+            self.loginButton.isEnabled = true
+            let vc = storyboard?.instantiateViewController(withIdentifier: "TabbarVC") as! UITabBarController
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true, completion: nil)
+            print("toNextView")
+        } else {
+            self.loginButton.backgroundColor = UIColor(named: "disabledButtonColor")
+            self.loginButton.isEnabled = false
+        }
     }
     @IBAction func registerButtonDidTapped(_ sender: UIButton) {
         //화면전환
@@ -46,5 +67,26 @@ class LoginViewController: UIViewController {
         //3.화면전환 메소드를 이용해서 화면을 전환
 //        self.present(registerViewController, animated: true, completion: nil)
         self.navigationController?.pushViewController(registerViewController, animated: true)
+        
+        registerViewController.userInfo = { [weak self] (userInfo) in
+            print(userInfo)
+            self?.userInfo = userInfo
+        }
     }
+    private func setupAttribute() {
+            let text1 = "계정이 없으신가요?"
+            let text2 = "가입하기"
+            let font1 = UIFont.systemFont(ofSize: 13)
+            let font2 = UIFont.systemFont(ofSize: 13, weight: .bold)
+            
+            let color1 = UIColor.darkGray
+            let color2 = UIColor(named: "facebookColor")!
+            
+            let attributes = generateButtonAttribute(
+                self.registerButton,
+                texts: text1, text2,
+                fonts: font1, font2,
+                colors: color1, color2 )
+            self.registerButton.setAttributedTitle(attributes, for: .normal)
+        }
 }

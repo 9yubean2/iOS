@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E133130628002C6200AF4333 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E133130528002C6200AF4333 /* UserInfo.swift */; };
 		E1E9D61E27F8AB9800A23ECD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E9D61D27F8AB9800A23ECD /* AppDelegate.swift */; };
 		E1E9D62027F8AB9800A23ECD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E9D61F27F8AB9800A23ECD /* SceneDelegate.swift */; };
 		E1E9D62527F8AB9800A23ECD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1E9D62327F8AB9800A23ECD /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E133130528002C6200AF4333 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		E1E9D61A27F8AB9800A23ECD /* Login&Register.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Login&Register.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1E9D61D27F8AB9800A23ECD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1E9D61F27F8AB9800A23ECD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				E1E9D62327F8AB9800A23ECD /* Main.storyboard */,
 				E1E9D65327F8CC7100A23ECD /* UIViewController + Extension.swift */,
 				E1E9D64F27F8B98700A23ECD /* RegisterViewController.swift */,
+				E133130528002C6200AF4333 /* UserInfo.swift */,
 				E1E9D65127F8CBAB00A23ECD /* UIView + Extension.swift */,
 				E1E9D64D27F8B35800A23ECD /* LoginViewController.swift */,
 				E1E9D62627F8AB9900A23ECD /* Assets.xcassets */,
@@ -272,6 +275,7 @@
 				E1E9D62027F8AB9800A23ECD /* SceneDelegate.swift in Sources */,
 				E1E9D65227F8CBAB00A23ECD /* UIView + Extension.swift in Sources */,
 				E1E9D65427F8CC7100A23ECD /* UIViewController + Extension.swift in Sources */,
+				E133130628002C6200AF4333 /* UserInfo.swift in Sources */,
 				E1E9D65027F8B98700A23ECD /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
