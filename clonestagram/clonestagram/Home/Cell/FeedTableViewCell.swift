@@ -9,27 +9,32 @@ import UIKit
 
 class FeedTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var buttonBookmark: UIButton!
-    @IBOutlet weak var buttonHeart: UIButton!
-    @IBOutlet weak var imageViewMyProfile: UIImageView!
-    @IBOutlet weak var labelUserName: UILabel!
-    @IBOutlet weak var imageViewUserProfile: UIImageView!
-    @IBOutlet weak var labelFeed: UILabel!
+//    @IBOutlet weak var buttonBookmark: UIButton!
+
+//    @IBOutlet weak var imageViewMyProfile: UIImageView!
+//    @IBOutlet weak var labelUserName: UILabel!
+//    @IBOutlet weak var imageViewUserProfile: UIImageView!
+//    @IBOutlet weak var labelFeed: UILabel!
     
+    @IBOutlet weak var img_UserProfile: UIImageView!
+    @IBOutlet weak var img_MyProfile: UIImageView!
+    @IBOutlet weak var btnHeart: UIButton!
     
-    @IBAction func buttonHeartisTapped(_ sender: Any) {
-        if buttonHeart.isSelected{
-            buttonHeart.isSelected = false
+    @IBOutlet weak var btnBookmark: UIButton!
+    
+    @IBAction func btnHeartisTapped(_ sender: Any) {
+        if btnHeart.isSelected{
+            btnHeart.isSelected = false
         } else {
-            buttonHeart.isSelected = true
+            btnHeart.isSelected = true
         }
     }
-    
-    @IBAction func buttonBookmarkisTapped(_ sender: Any) {
-        if buttonBookmark.isSelected{
-            buttonBookmark.isSelected = false
+
+    @IBAction func btnBookmarkisTapped(_ sender: Any) {
+        if btnBookmark.isSelected{
+            btnBookmark.isSelected = false
         } else {
-            buttonBookmark.isSelected = true
+            btnBookmark.isSelected = true
         }
     }
     
@@ -37,10 +42,10 @@ class FeedTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        //imageViewUserProfile.layer.cornerRadius = 22.5
-//        imageViewUserProfile.clipsToBounds = true
-//        imageViewMyProfile.layer.cornerRadius = 22.5
-//        imageViewMyProfile.clipsToBounds = true
+        img_UserProfile.layer.cornerRadius = 14.5
+        img_UserProfile.clipsToBounds = true
+        img_MyProfile.layer.cornerRadius = 14.5
+        img_MyProfile.clipsToBounds = true
         
     }
 
