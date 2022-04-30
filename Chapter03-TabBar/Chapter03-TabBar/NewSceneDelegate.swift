@@ -13,6 +13,15 @@ class NewSceneDelegate: UIResponder, UIWindowSceneDelegate {
         //create Tab Bar Controller & set background color white
         let tbC = UITabBarController()
         tbC.view.backgroundColor = .white
+        tbC.tabBar.barTintColor = .black
+    
+        //solved tab bar background not working error
+//        let appearance = UITabBarAppearance()
+//        appearance.configureWithOpaqueBackground()
+//        appearance.backgroundImage = UIImage(named: "menubar-bg-mini")
+//        tbC.tabBar.standardAppearance = appearance
+//        tbC.tabBar.scrollEdgeAppearance = tbC.tabBar.standardAppearance
+        
         
         //set Tab Bar Controller to rootView
         self.window?.rootViewController = tbC
@@ -26,6 +35,7 @@ class NewSceneDelegate: UIResponder, UIWindowSceneDelegate {
         tbC.setViewControllers([view01, view02, view03], animated: false)
         
         //set attribute each tab bar item properties
+        //view01.tabBarItem = UITabBarItem(title: "Calendar", image: UIImage(named: "designbump")?.withRenderingMode(.alwaysOriginal), selectedImage: nil)
         view01.tabBarItem = UITabBarItem(title: "Calendar", image: UIImage(named: "calendar"), selectedImage: nil)
         view02.tabBarItem = UITabBarItem(title: "File", image: UIImage(named: "file-tree"), selectedImage: nil)
 
