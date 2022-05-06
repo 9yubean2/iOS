@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18107181BC6E4B188F14B022 /* Pods_clonestagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31534196822F01E38E6E61AC /* Pods_clonestagram.framework */; };
 		E17AF17A281AFEEC002988E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17AF179281AFEEC002988E5 /* AppDelegate.swift */; };
 		E17AF17C281AFEEC002988E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17AF17B281AFEEC002988E5 /* SceneDelegate.swift */; };
 		E17AF17E281AFEEC002988E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17AF17D281AFEEC002988E5 /* ViewController.swift */; };
@@ -28,6 +29,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		31534196822F01E38E6E61AC /* Pods_clonestagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_clonestagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41D699A8D3F87F67C58D337B /* Pods-clonestagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-clonestagram.debug.xcconfig"; path = "Target Support Files/Pods-clonestagram/Pods-clonestagram.debug.xcconfig"; sourceTree = "<group>"; };
+		61532BB93E7A3CC7AF1D42DA /* Pods-clonestagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-clonestagram.release.xcconfig"; path = "Target Support Files/Pods-clonestagram/Pods-clonestagram.release.xcconfig"; sourceTree = "<group>"; };
 		E17AF176281AFEEC002988E5 /* clonestagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clonestagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E17AF179281AFEEC002988E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E17AF17B281AFEEC002988E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,17 +59,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18107181BC6E4B188F14B022 /* Pods_clonestagram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3699A87BDDDD096C71511260 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				41D699A8D3F87F67C58D337B /* Pods-clonestagram.debug.xcconfig */,
+				61532BB93E7A3CC7AF1D42DA /* Pods-clonestagram.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B51D1559A35E72717EAC9D44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31534196822F01E38E6E61AC /* Pods_clonestagram.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E17AF16D281AFEEC002988E5 = {
 			isa = PBXGroup;
 			children = (
 				E17AF178281AFEEC002988E5 /* clonestagram */,
 				E17AF177281AFEEC002988E5 /* Products */,
+				3699A87BDDDD096C71511260 /* Pods */,
+				B51D1559A35E72717EAC9D44 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E17AF18A281AFEED002988E5 /* Build configuration list for PBXNativeTarget "clonestagram" */;
 			buildPhases = (
+				435886ABCAA928D2DDBE4887 /* [CP] Check Pods Manifest.lock */,
 				E17AF172281AFEEC002988E5 /* Sources */,
 				E17AF173281AFEEC002988E5 /* Frameworks */,
 				E17AF174281AFEEC002988E5 /* Resources */,
+				86D396C02C01D037A0ED9D38 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,6 +240,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		435886ABCAA928D2DDBE4887 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-clonestagram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86D396C02C01D037A0ED9D38 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-clonestagram/Pods-clonestagram-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-clonestagram/Pods-clonestagram-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-clonestagram/Pods-clonestagram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E17AF172281AFEEC002988E5 /* Sources */ = {
@@ -370,6 +439,7 @@
 		};
 		E17AF18B281AFEED002988E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41D699A8D3F87F67C58D337B /* Pods-clonestagram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -399,6 +469,7 @@
 		};
 		E17AF18C281AFEED002988E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61532BB93E7A3CC7AF1D42DA /* Pods-clonestagram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
