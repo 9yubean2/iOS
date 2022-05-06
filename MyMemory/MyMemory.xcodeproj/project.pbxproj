@@ -13,14 +13,12 @@
 		E15AA0F327F32CB3005D09F3 /* MyMemory.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E15AA0F127F32CB3005D09F3 /* MyMemory.xcdatamodeld */; };
 		E15AA0F527F32CB4005D09F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E15AA0F427F32CB4005D09F3 /* Assets.xcassets */; };
 		E15AA0F827F32CB4005D09F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E15AA0F627F32CB4005D09F3 /* LaunchScreen.storyboard */; };
-		E15AA10327F32CB4005D09F3 /* MyMemoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15AA10227F32CB4005D09F3 /* MyMemoryTests.swift */; };
-		E15AA10D27F32CB4005D09F3 /* MyMemoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15AA10C27F32CB4005D09F3 /* MyMemoryUITests.swift */; };
-		E15AA10F27F32CB4005D09F3 /* MyMemoryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15AA10E27F32CB4005D09F3 /* MyMemoryUITestsLaunchTests.swift */; };
 		E189CC5E27F342EE007ED67A /* MemoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189CC5D27F342EE007ED67A /* MemoListVC.swift */; };
 		E189CC6027F34316007ED67A /* MemoFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189CC5F27F34316007ED67A /* MemoFormVC.swift */; };
 		E189CC6227F34326007ED67A /* MemoReadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189CC6127F34326007ED67A /* MemoReadVC.swift */; };
 		E189CC6427F3437E007ED67A /* Memocell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189CC6327F3437E007ED67A /* Memocell.swift */; };
 		E189CC6627F343A1007ED67A /* MemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189CC6527F343A1007ED67A /* MemoData.swift */; };
+		E1DBF7B62825736C003B5612 /* CSLogButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DBF7B52825736C003B5612 /* CSLogButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,15 +48,13 @@
 		E15AA0F727F32CB4005D09F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E15AA0F927F32CB4005D09F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E15AA0FE27F32CB4005D09F3 /* MyMemoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyMemoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E15AA10227F32CB4005D09F3 /* MyMemoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMemoryTests.swift; sourceTree = "<group>"; };
 		E15AA10827F32CB4005D09F3 /* MyMemoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyMemoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E15AA10C27F32CB4005D09F3 /* MyMemoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMemoryUITests.swift; sourceTree = "<group>"; };
-		E15AA10E27F32CB4005D09F3 /* MyMemoryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMemoryUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E189CC5D27F342EE007ED67A /* MemoListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListVC.swift; sourceTree = "<group>"; };
 		E189CC5F27F34316007ED67A /* MemoFormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoFormVC.swift; sourceTree = "<group>"; };
 		E189CC6127F34326007ED67A /* MemoReadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoReadVC.swift; sourceTree = "<group>"; };
 		E189CC6327F3437E007ED67A /* Memocell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memocell.swift; sourceTree = "<group>"; };
 		E189CC6527F343A1007ED67A /* MemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoData.swift; sourceTree = "<group>"; };
+		E1DBF7B52825736C003B5612 /* CSLogButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSLogButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				E15AA0E727F32CB3005D09F3 /* MyMemory */,
-				E15AA10127F32CB4005D09F3 /* MyMemoryTests */,
-				E15AA10B27F32CB4005D09F3 /* MyMemoryUITests */,
 				E15AA0E627F32CB3005D09F3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -121,25 +115,9 @@
 				E189CC6127F34326007ED67A /* MemoReadVC.swift */,
 				E189CC6327F3437E007ED67A /* Memocell.swift */,
 				E189CC6527F343A1007ED67A /* MemoData.swift */,
+				E1DBF7B52825736C003B5612 /* CSLogButton.swift */,
 			);
 			path = MyMemory;
-			sourceTree = "<group>";
-		};
-		E15AA10127F32CB4005D09F3 /* MyMemoryTests */ = {
-			isa = PBXGroup;
-			children = (
-				E15AA10227F32CB4005D09F3 /* MyMemoryTests.swift */,
-			);
-			path = MyMemoryTests;
-			sourceTree = "<group>";
-		};
-		E15AA10B27F32CB4005D09F3 /* MyMemoryUITests */ = {
-			isa = PBXGroup;
-			children = (
-				E15AA10C27F32CB4005D09F3 /* MyMemoryUITests.swift */,
-				E15AA10E27F32CB4005D09F3 /* MyMemoryUITestsLaunchTests.swift */,
-			);
-			path = MyMemoryUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1DBF7B62825736C003B5612 /* CSLogButton.swift in Sources */,
 				E15AA0F327F32CB3005D09F3 /* MyMemory.xcdatamodeld in Sources */,
 				E189CC6627F343A1007ED67A /* MemoData.swift in Sources */,
 				E189CC6427F3437E007ED67A /* Memocell.swift in Sources */,
@@ -288,7 +267,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E15AA10327F32CB4005D09F3 /* MyMemoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,8 +274,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E15AA10F27F32CB4005D09F3 /* MyMemoryUITestsLaunchTests.swift in Sources */,
-				E15AA10D27F32CB4005D09F3 /* MyMemoryUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

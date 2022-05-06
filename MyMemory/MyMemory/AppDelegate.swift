@@ -12,8 +12,6 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var memolist = [MemoData]() //메모 데이터를 저장할 배열 변수
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
