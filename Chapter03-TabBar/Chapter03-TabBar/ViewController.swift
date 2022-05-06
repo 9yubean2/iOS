@@ -3,7 +3,6 @@
 //  Chapter03-TabBar
 //
 //  Created by 이규빈 on 2022/04/30.
-//
 
 import UIKit
 
@@ -11,7 +10,6 @@ class ViewController: UIViewController {
     
     //MARK: - Properties
     
-
     //MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -13,7 +13,6 @@ class NewSceneDelegate: UIResponder, UIWindowSceneDelegate {
         //create Tab Bar Controller & set background color white
         let tbC = UITabBarController()
         tbC.view.backgroundColor = .white
-        tbC.tabBar.barTintColor = .black
     
         //solved tab bar background not working error
 //        let appearance = UITabBarAppearance()
