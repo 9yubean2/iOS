@@ -67,24 +67,31 @@ class MemoFormVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
     
     // MARK: - LifeCycle
     override func viewDidLoad() {
-        
 
-        self.contentTV.delegate = self
+//        navigationbar background 변경
+//        let newAppearance = UINavigationBarAppearance()
+//        newAppearance.configureWithOpaqueBackground()
+//        newAppearance.backgroundColor = .white
+//        self.navigationController?.navigationBar.standardAppearance = newAppearance
+//        navigationController?.navigationBar.scrollEdgeAppearance = navigationController?.navigationBar.standardAppearance
         
-        //set background
-        let bgImage = UIImage(named:"memo-background")!
-        self.view.backgroundColor = UIColor(patternImage: bgImage)
+        
+        self.contentTV.delegate = self
         
         //textview basic property
         self.contentTV.layer.borderWidth = 0
         self.contentTV.layer.borderColor = UIColor.clear.cgColor
-        self.contentTV.backgroundColor = UIColor.clear
+//        self.contentTV.backgroundColor = UIColor.clear
+//        let bgImg = UIImage(named: "memo-background")!
+        self.contentTV.backgroundColor = UIColor(red:255/255, green:233/255, blue:138/255, alpha:1)
         
         //line spacing
         let style = NSMutableParagraphStyle()
         style.lineSpacing = 8
         self.contentTV.attributedText = NSAttributedString(string: " ", attributes: [.paragraphStyle: style])
         self.contentTV.text = ""
+        
+        
     }
     
     // MARK: - Helper

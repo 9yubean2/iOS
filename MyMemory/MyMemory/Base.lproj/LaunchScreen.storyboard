@@ -16,15 +16,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="note.text" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="NKn-JR-v7R">
-                                <rect key="frame" x="125" y="370" width="165" height="139.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="write.png" translatesAutoresizingMaskIntoConstraints="NO" id="NKn-JR-v7R">
+                                <rect key="frame" x="125" y="365" width="165" height="142"/>
                                 <color key="tintColor" systemColor="systemCyanColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="NKn-JR-v7R" secondAttribute="height" multiplier="165:142" id="Hu5-6L-0Vf"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paper-It✏️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTM-Vb-XZL">
-                                <rect key="frame" x="125" y="521" width="164" height="45"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paper-It" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTM-Vb-XZL">
+                                <rect key="frame" x="143.5" y="532" width="127" height="45"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="37"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -33,11 +33,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="MTM-Vb-XZL" firstAttribute="top" secondItem="NKn-JR-v7R" secondAttribute="bottom" constant="25" id="0GG-XZ-xQJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NKn-JR-v7R" secondAttribute="trailing" constant="124" id="3LZ-PA-uql"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MTM-Vb-XZL" secondAttribute="bottom" constant="296" id="DaN-O8-BhY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MTM-Vb-XZL" secondAttribute="bottom" constant="285" id="4Bn-tc-3mJ"/>
                             <constraint firstItem="NKn-JR-v7R" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="125" id="GaH-Qa-K4d"/>
                             <constraint firstItem="MTM-Vb-XZL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Lad-GB-kTs"/>
-                            <constraint firstItem="MTM-Vb-XZL" firstAttribute="top" secondItem="NKn-JR-v7R" secondAttribute="bottom" constant="10" id="sko-LG-h9g"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -47,7 +47,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="note.text" catalog="system" width="128" height="106"/>
+        <image name="write.png" width="256" height="257"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

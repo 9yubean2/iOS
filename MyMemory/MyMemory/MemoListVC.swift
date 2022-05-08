@@ -14,6 +14,28 @@ class MemoListVC: UITableViewController {
         self.tableView.reloadData()
 
     }
+    override func viewDidLoad() {
+        //SWRevealviewController 라이브러리의 revealViewController 객체를 읽어온다.
+        if let revealVC = self.revealViewController() {
+            //바버튼 아이템 객체를 정의
+            let btn = UIBarButtonItem()
+            btn.image = UIImage(named: "sidemenu.png")
+            btn.target = revealVC
+            btn.action = #selector(revealVC.revealToggle(_:))
+            self.navigationItem.leftBarButtonItem = btn
+            
+            //화면 끝에서 다른쪽으로 패닝하는 제스처 정의
+//            let dragLeft = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(moveSide(_:)))
+//            dragLeft.edges = UIRectEdge.left//시작모서리는 왼쪽
+            //화면을 스와이프하는 제스처 정의(사이드 메뉴 닫기용)
+//            let dragRight = UISwipeGestureRecognizer(target: self, action: #selector(moveSide(_:)))
+//            dragRight.direction = .left //방향은 왼쪽
+
+            self.view.addGestureRecognizer(revealVC.panGestureRecognizer())//뷰에 제스처 객체를 등록
+//            self.view.addGestureRecognizer(dragRight)//뷰에 제스처 객체를 등록
+        }
+        
+    }
 
     // MARK: - Table view data source
 
@@ -51,4 +73,21 @@ class MemoListVC: UITableViewController {
         vc.param = row
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
+    //MARK: - Helper
+//    @objc func moveSide(_ sender: Any){
+//        if sender is UIScreenEdgePanGestureRecognizer {
+//            self.delegate?.openSideBar(nil) //사이드바를 연다
+//        } else if sender is UISwipeGestureRecognizer {
+//            self.delegate?.closeSideBar(nil) //사이드바를 닫는다
+//        } else if sender is UIBarButtonItem {
+//            if self.delegate?.isSideBarShowing == false {
+//                self.delegate?.openSideBar(nil) //사이드바를 연다
+//            } else {
+//                self.delegate?.closeSideBar(nil) //사이드바를 닫는다
+//            }
+//        }
+//
+//    }
+    
 }
