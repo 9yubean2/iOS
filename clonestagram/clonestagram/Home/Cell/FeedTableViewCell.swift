@@ -19,6 +19,7 @@ class FeedTableViewCell: UITableViewCell {
     @IBOutlet weak var img_UserProfile: UIImageView!
     @IBOutlet weak var img_MyProfile: UIImageView!
     @IBOutlet weak var btnHeart: UIButton!
+    @IBOutlet weak var imageViewFeed: UIImageView!
     
     @IBOutlet weak var btnBookmark: UIButton!
     

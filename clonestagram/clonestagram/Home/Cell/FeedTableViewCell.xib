@@ -101,6 +101,7 @@
             <connections>
                 <outlet property="btnBookmark" destination="A70-fE-w0L" id="Evr-Q7-mk6"/>
                 <outlet property="btnHeart" destination="HJl-gR-TQE" id="AGs-gF-tBF"/>
+                <outlet property="imageViewFeed" destination="ofZ-jk-rlA" id="FBt-jN-zt9"/>
                 <outlet property="img_MyProfile" destination="eF4-QU-0Er" id="VlO-Zp-DcX"/>
                 <outlet property="img_UserProfile" destination="Wpr-A8-5KH" id="7eK-8c-sEF"/>
             </connections>
@@ -113,7 +114,7 @@
         <image name="ic_home_heart" width="512" height="512"/>
         <image name="ic_home_more" width="512" height="512"/>
         <image name="ic_home_send" width="512" height="512"/>
-        <image name="person.fill" catalog="system" width="32" height="32"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="sampleImage" width="3024" height="4032"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

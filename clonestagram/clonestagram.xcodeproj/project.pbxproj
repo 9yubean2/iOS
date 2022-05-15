@@ -26,6 +26,15 @@
 		E1FBAC81281C0273003D116F /* StoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1FBAC7F281C0273003D116F /* StoryTableViewCell.xib */; };
 		E1FBAC84281C08D8003D116F /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FBAC82281C08D8003D116F /* StoryCollectionViewCell.swift */; };
 		E1FBAC85281C08D8003D116F /* StoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1FBAC83281C08D8003D116F /* StoryCollectionViewCell.xib */; };
+		E1FC1511283148B60051B083 /* FeedAPIInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FC1510283148B60051B083 /* FeedAPIInput.swift */; };
+		E1FC1513283149400051B083 /* FeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FC1512283149400051B083 /* FeedModel.swift */; };
+		E1FC15152831496B0051B083 /* FeedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FC15142831496B0051B083 /* FeedDataManager.swift */; };
+		E1FC15182831525E0051B083 /* FeedUploadInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FC15172831525E0051B083 /* FeedUploadInput.swift */; };
+		E1FC151E283152F90051B083 /* FeedUploadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FC151D283152F90051B083 /* FeedUploadModel.swift */; };
+		E1FC1520283153B10051B083 /* FeedUploadDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FC151F283153B10051B083 /* FeedUploadDataManager.swift */; };
+		E1FC1523283169450051B083 /* UserFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FC1522283169450051B083 /* UserFeedModel.swift */; };
+		E1FC152528316C2F0051B083 /* UserFeedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FC152428316C2F0051B083 /* UserFeedDataManager.swift */; };
+		E1FC1527283176910051B083 /* DeleteUserFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FC1526283176910051B083 /* DeleteUserFeed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +61,15 @@
 		E1FBAC7F281C0273003D116F /* StoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryTableViewCell.xib; sourceTree = "<group>"; };
 		E1FBAC82281C08D8003D116F /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		E1FBAC83281C08D8003D116F /* StoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		E1FC1510283148B60051B083 /* FeedAPIInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAPIInput.swift; sourceTree = "<group>"; };
+		E1FC1512283149400051B083 /* FeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModel.swift; sourceTree = "<group>"; };
+		E1FC15142831496B0051B083 /* FeedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDataManager.swift; sourceTree = "<group>"; };
+		E1FC15172831525E0051B083 /* FeedUploadInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadInput.swift; sourceTree = "<group>"; };
+		E1FC151D283152F90051B083 /* FeedUploadModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadModel.swift; sourceTree = "<group>"; };
+		E1FC151F283153B10051B083 /* FeedUploadDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadDataManager.swift; sourceTree = "<group>"; };
+		E1FC1522283169450051B083 /* UserFeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedModel.swift; sourceTree = "<group>"; };
+		E1FC152428316C2F0051B083 /* UserFeedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedDataManager.swift; sourceTree = "<group>"; };
+		E1FC1526283176910051B083 /* DeleteUserFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteUserFeed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +90,6 @@
 				41D699A8D3F87F67C58D337B /* Pods-clonestagram.debug.xcconfig */,
 				61532BB93E7A3CC7AF1D42DA /* Pods-clonestagram.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -121,6 +138,8 @@
 		E17AF18D281B0376002988E5 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				E1FC1516283152440051B083 /* FeedUploadDataManager */,
+				E1FC150F2831489C0051B083 /* FeedDataManager */,
 				E17AF190281B0750002988E5 /* Cell */,
 				E17AF18E281B0398002988E5 /* HomeViewController.swift */,
 			);
@@ -143,6 +162,8 @@
 		E1DBF6B3281C4E2B003B5612 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				E1FC1528283176940051B083 /* DeleteUserFeed */,
+				E1FC15212831692D0051B083 /* UserFeedDataManager */,
 				E1DBF6BB281C5E8F003B5612 /* PostCell */,
 				E1DBF6B4281C4E51003B5612 /* ProfileViewController.swift */,
 				E1DBF6BA281C5E7D003B5612 /* ProfileCell */,
@@ -166,6 +187,43 @@
 				E1DBF6BD281C5EA8003B5612 /* PostCollectionViewCell.xib */,
 			);
 			path = PostCell;
+			sourceTree = "<group>";
+		};
+		E1FC150F2831489C0051B083 /* FeedDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				E1FC1510283148B60051B083 /* FeedAPIInput.swift */,
+				E1FC1512283149400051B083 /* FeedModel.swift */,
+				E1FC15142831496B0051B083 /* FeedDataManager.swift */,
+			);
+			path = FeedDataManager;
+			sourceTree = "<group>";
+		};
+		E1FC1516283152440051B083 /* FeedUploadDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				E1FC15172831525E0051B083 /* FeedUploadInput.swift */,
+				E1FC151D283152F90051B083 /* FeedUploadModel.swift */,
+				E1FC151F283153B10051B083 /* FeedUploadDataManager.swift */,
+			);
+			path = FeedUploadDataManager;
+			sourceTree = "<group>";
+		};
+		E1FC15212831692D0051B083 /* UserFeedDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				E1FC1522283169450051B083 /* UserFeedModel.swift */,
+				E1FC152428316C2F0051B083 /* UserFeedDataManager.swift */,
+			);
+			path = UserFeedDataManager;
+			sourceTree = "<group>";
+		};
+		E1FC1528283176940051B083 /* DeleteUserFeed */ = {
+			isa = PBXGroup;
+			children = (
+				E1FC1526283176910051B083 /* DeleteUserFeed.swift */,
+			);
+			path = DeleteUserFeed;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,12 +349,21 @@
 				E1DBF6BE281C5EA8003B5612 /* PostCollectionViewCell.swift in Sources */,
 				E17AF17E281AFEEC002988E5 /* ViewController.swift in Sources */,
 				E17AF17A281AFEEC002988E5 /* AppDelegate.swift in Sources */,
+				E1FC1527283176910051B083 /* DeleteUserFeed.swift in Sources */,
+				E1FC15182831525E0051B083 /* FeedUploadInput.swift in Sources */,
+				E1FC1520283153B10051B083 /* FeedUploadDataManager.swift in Sources */,
 				E17AF17C281AFEEC002988E5 /* SceneDelegate.swift in Sources */,
 				E17AF18F281B0398002988E5 /* HomeViewController.swift in Sources */,
 				E17AF193281B0771002988E5 /* FeedTableViewCell.swift in Sources */,
+				E1FC152528316C2F0051B083 /* UserFeedDataManager.swift in Sources */,
 				E1FBAC84281C08D8003D116F /* StoryCollectionViewCell.swift in Sources */,
+				E1FC1513283149400051B083 /* FeedModel.swift in Sources */,
+				E1FC1511283148B60051B083 /* FeedAPIInput.swift in Sources */,
 				E1DBF6B5281C4E51003B5612 /* ProfileViewController.swift in Sources */,
 				E1DBF6B8281C5132003B5612 /* profileCollectionViewCell.swift in Sources */,
+				E1FC1523283169450051B083 /* UserFeedModel.swift in Sources */,
+				E1FC151E283152F90051B083 /* FeedUploadModel.swift in Sources */,
+				E1FC15152831496B0051B083 /* FeedDataManager.swift in Sources */,
 				E1FBAC80281C0273003D116F /* StoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

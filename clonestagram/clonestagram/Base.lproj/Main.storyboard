@@ -60,7 +60,7 @@
             </objects>
             <point key="canvasLocation" x="2401" y="563"/>
         </scene>
-        <!--Item 1-->
+        <!--Home-->
         <scene sceneID="Jof-VU-udV">
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" id="Q5v-Pw-CQf" customClass="HomeViewController" customModule="clonestagram" customModuleProvider="target" sceneMemberID="viewController">
@@ -103,6 +103,9 @@
                                         </constraints>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Button" image="ic_my_upload"/>
+                                        <connections>
+                                            <action selector="btnUploadImage:" destination="Q5v-Pw-CQf" eventType="touchUpInside" id="n6C-gw-Hjk"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -137,7 +140,7 @@
                             <constraint firstItem="jN7-l5-7qg" firstAttribute="top" secondItem="GM5-Zn-ifL" secondAttribute="bottom" id="pOi-Y1-TCE"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="iKc-1X-w8k"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="iKc-1X-w8k"/>
                     <connections>
                         <outlet property="tableView" destination="jN7-l5-7qg" id="d8F-h0-QjD"/>
                     </connections>
@@ -154,6 +157,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="Q5v-Pw-CQf" kind="relationship" relationship="viewControllers" id="nz9-70-IJr"/>
@@ -164,11 +168,11 @@
             </objects>
             <point key="canvasLocation" x="381" y="121"/>
         </scene>
-        <!--Item 2-->
+        <!--Profile-->
         <scene sceneID="aom-v5-b0W">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tWs-pN-HnT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="w4r-Zj-IH6"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.crop.circle" catalog="system" id="w4r-Zj-IH6"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="XGa-vU-SFV">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -185,12 +189,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="house" catalog="system" width="128" height="106"/>
         <image name="ic_catstagram_logo" width="476" height="96"/>
         <image name="ic_home_heart" width="512" height="512"/>
         <image name="ic_home_send" width="512" height="512"/>
         <image name="ic_my_upload" width="512" height="512"/>
-        <image name="line.3.horizontal" catalog="system" width="32" height="32"/>
-        <image name="plus.app" catalog="system" width="32" height="32"/>
+        <image name="line.3.horizontal" catalog="system" width="128" height="64"/>
+        <image name="person.crop.circle" catalog="system" width="128" height="121"/>
+        <image name="plus.app" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

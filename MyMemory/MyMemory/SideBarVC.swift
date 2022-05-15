@@ -49,7 +49,7 @@ class SideBarVC: UITableViewController {
         nameLabel.backgroundColor = .clear
         
         emailLabel.frame = CGRect(x: 70, y: 30, width: 100, height: 30)
-        emailLabel.text = "mail@gmail.com"
+        emailLabel.text = "dlrbqls3024@gmail.com"
         emailLabel.textColor = .white
         emailLabel.font = UIFont.systemFont(ofSize: 11)
         emailLabel.backgroundColor = .clear
