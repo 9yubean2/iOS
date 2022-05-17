@@ -10,6 +10,7 @@ import UIKit
 class ProfileViewController: UIViewController, UIGestureRecognizerDelegate {
 
     //MARK: - Properties
+    
     @IBOutlet weak var profileCollectionView: UICollectionView!
     
     var userPosts: [GetUserPosts]? {
@@ -17,13 +18,17 @@ class ProfileViewController: UIViewController, UIGestureRecognizerDelegate {
     }
     
     var deletedIdx : Int?
+    
     //MARK: - LifeCycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupProfileCollectionview()
         setupData()
     }
+    
     //MARK: - Actions
+    
     @objc func didLongPressCell(gestureRecognizer: UILongPressGestureRecognizer) {
         if gestureRecognizer.state != .began { return }
         
@@ -126,6 +131,7 @@ extension ProfileViewController : UICollectionViewDelegateFlowLayout {
         }
     }
 }
+
 
 //MARK: - API
 extension ProfileViewController {
