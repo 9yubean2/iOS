@@ -3,7 +3,7 @@
 //  Chapter05-UserDefaults
 //
 //  Created by 이규빈 on 2022/05/16.
-//
+
 
 import UIKit
 
@@ -71,6 +71,7 @@ class ListViewController: UITableViewController {
         return super.tableView(tableView, numberOfRowsInSection: section)
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //go to func edit
 //        if indexPath.row == 0 {
 //            //first row is taaped
 //            //show alert for input
