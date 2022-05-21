@@ -58,7 +58,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="moS-RQ-gvy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2401" y="563"/>
+            <point key="canvasLocation" x="1878" y="1878"/>
         </scene>
         <!--Home-->
         <scene sceneID="Jof-VU-udV">
@@ -147,7 +147,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="poJ-6Z-Pwd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1671" y="-143"/>
+            <point key="canvasLocation" x="-1164" y="1149"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="FE0-If-pnv">
@@ -161,12 +161,51 @@
                     </tabBar>
                     <connections>
                         <segue destination="Q5v-Pw-CQf" kind="relationship" relationship="viewControllers" id="nz9-70-IJr"/>
+                        <segue destination="qd9-De-m54" kind="relationship" relationship="viewControllers" id="MSj-gL-x5v"/>
                         <segue destination="tWs-pN-HnT" kind="relationship" relationship="viewControllers" id="97A-gp-YJN"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U64-1N-bn4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="381" y="121"/>
+        </scene>
+        <!--릴스-->
+        <scene sceneID="M4Q-MN-nQ8">
+            <objects>
+                <viewController id="qd9-De-m54" customClass="ReelsViewController" customModule="clonestagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mBP-9B-QLZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1Os-aQ-idM">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="IrT-1q-Kwc">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5z9-cy-9Vs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5z9-cy-9Vs" firstAttribute="trailing" secondItem="1Os-aQ-idM" secondAttribute="trailing" id="Bsg-tA-Ti5"/>
+                            <constraint firstItem="1Os-aQ-idM" firstAttribute="leading" secondItem="5z9-cy-9Vs" secondAttribute="leading" id="GaU-Ao-cW3"/>
+                            <constraint firstItem="5z9-cy-9Vs" firstAttribute="bottom" secondItem="1Os-aQ-idM" secondAttribute="bottom" id="LBV-3y-4z5"/>
+                            <constraint firstItem="1Os-aQ-idM" firstAttribute="top" secondItem="5z9-cy-9Vs" secondAttribute="top" id="chJ-Ax-Ex2"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="릴스" id="dJG-HA-ct4"/>
+                    <connections>
+                        <outlet property="reelsCollectionView" destination="1Os-aQ-idM" id="F2j-jj-0A1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="56J-k0-cwL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="1150"/>
         </scene>
         <!--Profile-->
         <scene sceneID="aom-v5-b0W">
@@ -185,7 +224,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="idP-82-epv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1669.5652173913045" y="562.5"/>
+            <point key="canvasLocation" x="1877" y="1148"/>
         </scene>
     </scenes>
     <resources>

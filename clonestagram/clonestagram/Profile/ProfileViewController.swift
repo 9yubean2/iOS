@@ -4,7 +4,6 @@
 //
 //  Created by 이규빈 on 2022/04/30.
 //
-
 import UIKit
 
 class ProfileViewController: UIViewController, UIGestureRecognizerDelegate {
@@ -95,7 +94,7 @@ extension ProfileViewController :UICollectionViewDelegate, UICollectionViewDataS
             
             if let cellData = self.userPosts {
                 // 데이터가 있는 경우 cell에 데이터 전달
-                cell.setupData(imageURLstr: cellData[indexPath.item].postImgUrl)
+                cell.setupData(cellData[indexPath.item].postImgUrl)
             }
             return cell
             

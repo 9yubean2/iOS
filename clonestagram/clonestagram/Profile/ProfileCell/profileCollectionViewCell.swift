@@ -4,7 +4,6 @@
 //
 //  Created by 이규빈 on 2022/04/30.
 //
-
 import UIKit
 
 class profileCollectionViewCell: UICollectionViewCell {
