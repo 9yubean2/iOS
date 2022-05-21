@@ -11,4 +11,5 @@ target 'clonestagram' do
 
 pod 'Alamofire'
 pod 'Kingfisher', '~> 7.0'
+pod 'SnapKit', '~> 5.0.0'
 end

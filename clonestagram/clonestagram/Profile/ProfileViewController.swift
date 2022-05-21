@@ -106,7 +106,7 @@ extension ProfileViewController :UICollectionViewDelegate, UICollectionViewDataS
 extension ProfileViewController : UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if indexPath.section == 0 {
-            return CGSize(width: collectionView.frame.width, height: CGFloat(159))
+            return CGSize(width: collectionView.frame.width, height: CGFloat(155))
         } else {
             let size = CGFloat((collectionView.frame.width/3) - (4/3))
             return CGSize(width: size, height: size)

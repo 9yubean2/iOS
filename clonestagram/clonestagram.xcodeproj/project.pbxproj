@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18107181BC6E4B188F14B022 /* Pods_clonestagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31534196822F01E38E6E61AC /* Pods_clonestagram.framework */; };
+		7A9221C7DCE3FB808491F80A /* Pods_clonestagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98FD3BC5CBFD0791D9C411FB /* Pods_clonestagram.framework */; };
+		E154317E2838A63D004814AA /* ReelsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E154317D2838A63D004814AA /* ReelsCell.swift */; };
+		E15431822838A7B7004814AA /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15431812838A7B7004814AA /* VideoPlayerView.swift */; };
+		E15431852838AB1B004814AA /* 6378.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E15431832838AB1A004814AA /* 6378.mp4 */; };
+		E15431862838AB1B004814AA /* 5049.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E15431842838AB1B004814AA /* 5049.mp4 */; };
+		E154318A28390B14004814AA /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E154318928390B14004814AA /* RegisterViewController.swift */; };
+		E154318E28391694004814AA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E154318D28391694004814AA /* LoginViewController.swift */; };
+		E1543190283924D0004814AA /* LoginRegister+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E154318F283924D0004814AA /* LoginRegister+Extension.swift */; };
+		E154319228392538004814AA /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E154319128392538004814AA /* UserInfo.swift */; };
 		E1651A142838909300CB80F7 /* ReelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1651A132838909300CB80F7 /* ReelsViewController.swift */; };
 		E1651A172838912000CB80F7 /* ReelsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1651A152838912000CB80F7 /* ReelsCollectionViewCell.swift */; };
 		E1651A182838912000CB80F7 /* ReelsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1651A162838912000CB80F7 /* ReelsCollectionViewCell.xib */; };
-		E1651A1B2838A42400CB80F7 /* 5049.MOV in Resources */ = {isa = PBXBuildFile; fileRef = E1651A192838A42400CB80F7 /* 5049.MOV */; };
-		E1651A1C2838A42400CB80F7 /* 6378.mov in Resources */ = {isa = PBXBuildFile; fileRef = E1651A1A2838A42400CB80F7 /* 6378.mov */; };
 		E17AF17A281AFEEC002988E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17AF179281AFEEC002988E5 /* AppDelegate.swift */; };
 		E17AF17C281AFEEC002988E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17AF17B281AFEEC002988E5 /* SceneDelegate.swift */; };
 		E17AF17E281AFEEC002988E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17AF17D281AFEEC002988E5 /* ViewController.swift */; };
@@ -43,15 +49,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		31534196822F01E38E6E61AC /* Pods_clonestagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_clonestagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41D699A8D3F87F67C58D337B /* Pods-clonestagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-clonestagram.debug.xcconfig"; path = "Target Support Files/Pods-clonestagram/Pods-clonestagram.debug.xcconfig"; sourceTree = "<group>"; };
 		61532BB93E7A3CC7AF1D42DA /* Pods-clonestagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-clonestagram.release.xcconfig"; path = "Target Support Files/Pods-clonestagram/Pods-clonestagram.release.xcconfig"; sourceTree = "<group>"; };
+		98FD3BC5CBFD0791D9C411FB /* Pods_clonestagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_clonestagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E154317C2838A5ED004814AA /* clonestagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clonestagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E154317D2838A63D004814AA /* ReelsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsCell.swift; sourceTree = "<group>"; };
+		E15431812838A7B7004814AA /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		E15431832838AB1A004814AA /* 6378.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 6378.mp4; sourceTree = "<group>"; };
+		E15431842838AB1B004814AA /* 5049.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5049.mp4; sourceTree = "<group>"; };
+		E154318928390B14004814AA /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		E154318D28391694004814AA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E154318F283924D0004814AA /* LoginRegister+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginRegister+Extension.swift"; sourceTree = "<group>"; };
+		E154319128392538004814AA /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		E1651A132838909300CB80F7 /* ReelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsViewController.swift; sourceTree = "<group>"; };
 		E1651A152838912000CB80F7 /* ReelsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsCollectionViewCell.swift; sourceTree = "<group>"; };
 		E1651A162838912000CB80F7 /* ReelsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReelsCollectionViewCell.xib; sourceTree = "<group>"; };
-		E1651A192838A42400CB80F7 /* 5049.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = 5049.MOV; sourceTree = "<group>"; };
-		E1651A1A2838A42400CB80F7 /* 6378.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = 6378.mov; sourceTree = "<group>"; };
-		E17AF176281AFEEC002988E5 /* clonestagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clonestagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E17AF179281AFEEC002988E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E17AF17B281AFEEC002988E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E17AF17D281AFEEC002988E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,7 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18107181BC6E4B188F14B022 /* Pods_clonestagram.framework in Frameworks */,
+				7A9221C7DCE3FB808491F80A /* Pods_clonestagram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,46 +115,60 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		B51D1559A35E72717EAC9D44 /* Frameworks */ = {
+		A2517958B1B2A3391DF16DCD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				31534196822F01E38E6E61AC /* Pods_clonestagram.framework */,
+				98FD3BC5CBFD0791D9C411FB /* Pods_clonestagram.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E15431872838B3D7004814AA /* Reels */ = {
+			isa = PBXGroup;
+			children = (
+				E15431842838AB1B004814AA /* 5049.mp4 */,
+				E15431832838AB1A004814AA /* 6378.mp4 */,
+				E15431812838A7B7004814AA /* VideoPlayerView.swift */,
+				E1651A132838909300CB80F7 /* ReelsViewController.swift */,
+				E154317D2838A63D004814AA /* ReelsCell.swift */,
+				E1651A152838912000CB80F7 /* ReelsCollectionViewCell.swift */,
+				E1651A162838912000CB80F7 /* ReelsCollectionViewCell.xib */,
+			);
+			path = Reels;
+			sourceTree = "<group>";
+		};
+		E154318828390AF8004814AA /* LoginRegister */ = {
+			isa = PBXGroup;
+			children = (
+				E154318F283924D0004814AA /* LoginRegister+Extension.swift */,
+				E154318928390B14004814AA /* RegisterViewController.swift */,
+				E154318D28391694004814AA /* LoginViewController.swift */,
+				E154319128392538004814AA /* UserInfo.swift */,
+			);
+			path = LoginRegister;
 			sourceTree = "<group>";
 		};
 		E17AF16D281AFEEC002988E5 = {
 			isa = PBXGroup;
 			children = (
 				E17AF178281AFEEC002988E5 /* clonestagram */,
-				E17AF177281AFEEC002988E5 /* Products */,
 				3699A87BDDDD096C71511260 /* Pods */,
-				B51D1559A35E72717EAC9D44 /* Frameworks */,
+				A2517958B1B2A3391DF16DCD /* Frameworks */,
+				E154317C2838A5ED004814AA /* clonestagram.app */,
 			);
-			sourceTree = "<group>";
-		};
-		E17AF177281AFEEC002988E5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E17AF176281AFEEC002988E5 /* clonestagram.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		E17AF178281AFEEC002988E5 /* clonestagram */ = {
 			isa = PBXGroup;
 			children = (
-				E1651A192838A42400CB80F7 /* 5049.MOV */,
-				E1651A1A2838A42400CB80F7 /* 6378.mov */,
+				E154318828390AF8004814AA /* LoginRegister */,
 				E1DBF6B3281C4E2B003B5612 /* Profile */,
 				E17AF18D281B0376002988E5 /* Home */,
+				E15431872838B3D7004814AA /* Reels */,
 				E17AF179281AFEEC002988E5 /* AppDelegate.swift */,
 				E17AF17B281AFEEC002988E5 /* SceneDelegate.swift */,
 				E17AF17D281AFEEC002988E5 /* ViewController.swift */,
 				E17AF17F281AFEEC002988E5 /* Main.storyboard */,
-				E1651A132838909300CB80F7 /* ReelsViewController.swift */,
-				E1651A152838912000CB80F7 /* ReelsCollectionViewCell.swift */,
-				E1651A162838912000CB80F7 /* ReelsCollectionViewCell.xib */,
 				E17AF182281AFEED002988E5 /* Assets.xcassets */,
 				E17AF184281AFEED002988E5 /* LaunchScreen.storyboard */,
 				E17AF187281AFEED002988E5 /* Info.plist */,
@@ -260,7 +286,7 @@
 			);
 			name = clonestagram;
 			productName = clonestagram;
-			productReference = E17AF176281AFEEC002988E5 /* clonestagram.app */;
+			productReference = E154317C2838A5ED004814AA /* clonestagram.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -287,7 +313,7 @@
 				Base,
 			);
 			mainGroup = E17AF16D281AFEEC002988E5;
-			productRefGroup = E17AF177281AFEEC002988E5 /* Products */;
+			productRefGroup = E17AF16D281AFEEC002988E5;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -305,13 +331,13 @@
 				E17AF186281AFEED002988E5 /* LaunchScreen.storyboard in Resources */,
 				E17AF194281B0771002988E5 /* FeedTableViewCell.xib in Resources */,
 				E17AF183281AFEED002988E5 /* Assets.xcassets in Resources */,
-				E1651A1B2838A42400CB80F7 /* 5049.MOV in Resources */,
 				E1FBAC81281C0273003D116F /* StoryTableViewCell.xib in Resources */,
 				E1DBF6B9281C5132003B5612 /* profileCollectionViewCell.xib in Resources */,
 				E1FBAC85281C08D8003D116F /* StoryCollectionViewCell.xib in Resources */,
-				E1651A1C2838A42400CB80F7 /* 6378.mov in Resources */,
 				E1651A182838912000CB80F7 /* ReelsCollectionViewCell.xib in Resources */,
 				E17AF181281AFEEC002988E5 /* Main.storyboard in Resources */,
+				E15431852838AB1B004814AA /* 6378.mp4 in Resources */,
+				E15431862838AB1B004814AA /* 5049.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +393,7 @@
 				E1651A172838912000CB80F7 /* ReelsCollectionViewCell.swift in Sources */,
 				E1DBF6BE281C5EA8003B5612 /* PostCollectionViewCell.swift in Sources */,
 				E17AF17E281AFEEC002988E5 /* ViewController.swift in Sources */,
+				E154318A28390B14004814AA /* RegisterViewController.swift in Sources */,
 				E17AF17A281AFEEC002988E5 /* AppDelegate.swift in Sources */,
 				E1FC1527283176910051B083 /* DeleteUserFeed.swift in Sources */,
 				E1FC15182831525E0051B083 /* FeedUploadInput.swift in Sources */,
@@ -376,15 +403,20 @@
 				E17AF18F281B0398002988E5 /* HomeViewController.swift in Sources */,
 				E17AF193281B0771002988E5 /* FeedTableViewCell.swift in Sources */,
 				E1FC152528316C2F0051B083 /* UserFeedDataManager.swift in Sources */,
+				E154318E28391694004814AA /* LoginViewController.swift in Sources */,
 				E1FBAC84281C08D8003D116F /* StoryCollectionViewCell.swift in Sources */,
 				E1FC1513283149400051B083 /* FeedModel.swift in Sources */,
+				E1543190283924D0004814AA /* LoginRegister+Extension.swift in Sources */,
 				E1FC1511283148B60051B083 /* FeedAPIInput.swift in Sources */,
 				E1DBF6B5281C4E51003B5612 /* ProfileViewController.swift in Sources */,
 				E1DBF6B8281C5132003B5612 /* profileCollectionViewCell.swift in Sources */,
+				E154317E2838A63D004814AA /* ReelsCell.swift in Sources */,
 				E1FC1523283169450051B083 /* UserFeedModel.swift in Sources */,
 				E1FC151E283152F90051B083 /* FeedUploadModel.swift in Sources */,
 				E1FC15152831496B0051B083 /* FeedDataManager.swift in Sources */,
 				E1FBAC80281C0273003D116F /* StoryTableViewCell.swift in Sources */,
+				E154319228392538004814AA /* UserInfo.swift in Sources */,
+				E15431822838A7B7004814AA /* VideoPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

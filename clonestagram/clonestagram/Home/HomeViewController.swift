@@ -76,7 +76,7 @@ extension HomeViewController : UITableViewDelegate, UITableViewDataSource {
         if indexPath.row == 0{
             return 75
         } else {
-            return 635
+            return 640
         }
     }
     
@@ -102,7 +102,7 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 70, height: 70)
+        return CGSize(width: 62, height: 70)
     }
     
 }

@@ -11,7 +11,8 @@ class ReelsViewController: UIViewController  {
     //MARK: - Properties
     @IBOutlet weak var reelsCollectionView: UICollectionView!
     
-    private let videoURLStrArr = ["5049","6379"]
+    private let videoURLStrArr = ["5049","6378"]
+    private var nowPage = 0
     
     //MARK: - LifeCycle
     override func viewDidLoad() {
@@ -27,9 +28,26 @@ class ReelsViewController: UIViewController  {
     private func setupReelsCollectionView(){
         reelsCollectionView.delegate = self
         reelsCollectionView.dataSource = self
-        reelsCollectionView.register(UINib(nibName: "ReelsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: ReelsCollectionViewCell.identifier)
+        reelsCollectionView.decelerationRate = .fast
+        reelsCollectionView.register(ReelsCell.self, forCellWithReuseIdentifier: ReelsCell.identifier)
+        
+        startLoop()
     }
 
+    private func startLoop() {
+        let _ = Timer.scheduledTimer(withTimeInterval: 2, repeats: true) { _ in
+            self.moveNextPage()
+            
+        }
+    }
+    private func moveNextPage() {
+        let itemCount = reelsCollectionView.numberOfItems(inSection: 0)
+        nowPage += 1
+        if (nowPage >= itemCount) {
+            nowPage = 0
+        }
+        reelsCollectionView.scrollToItem(at: IndexPath(item: nowPage, section: 0), at: .centeredVertically, animated: true)
+    }
     
 
 }
@@ -41,8 +59,14 @@ extension ReelsViewController : UICollectionViewDelegate, UICollectionViewDataSo
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ReelsCollectionViewCell.identifier, for: indexPath) as? ReelsCollectionViewCell else {fatalError()}
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ReelsCell.identifier, for: indexPath) as? ReelsCell else {return UICollectionViewCell()}
+        cell.setupURL(videoURLStrArr.randomElement()!)
         return cell
+    }
+    func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if let cell = collectionView.cellForItem(at: indexPath) as? ReelsCell {
+            cell.videoView?.cleanup()
+        }
     }
 }
 extension ReelsViewController: UICollectionViewDelegateFlowLayout {
